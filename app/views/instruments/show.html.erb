@@ -1,0 +1,8 @@
+
+<h3><%= @instrument.name %></h3>
+
+<p>Classification: <%= @instrument.classification %></p>
+<p><ul>
+<% @instrument.artists.each do |artist| %>
+<li><%= artist.name %></li>
+<% end %>

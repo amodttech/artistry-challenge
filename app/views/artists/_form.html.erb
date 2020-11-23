@@ -1,0 +1,16 @@
+<%= form_for @artist do |f| %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %><br>
+
+    <%= f.label :age %><br>
+    <%= f.text_field :age %><br>
+
+    <%= f.label :title %><br>
+    <%= f.text_field :title %><br>
+
+    <%= f.label :instrument %><br>
+    <%= f.collection_select :instrument_ids, Instrument.all, :id, :name %><br>
+
+    <%= f.submit%>
+
+    <% end %>
